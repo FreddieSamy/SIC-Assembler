@@ -1,0 +1,12 @@
+		START   1F0C ;start problem $ SUBR
+LDA		FIVE
+STA		ALPHA
+LDCH 	CHARZ
+STCH 	C1
+.
+.
+ALPHA 	RESW 	1 		;Uninitialized word.
+FIVE 	WORD 	5 		;Word initialized to 5.
+CHARZ 	BYTE 	C'Z' 	;Byte initialized to ’Z’.
+C1 		RESB 	1 		;Uninitialized byte.
+		END		1F0C
